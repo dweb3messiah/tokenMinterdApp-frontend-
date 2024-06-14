@@ -1,0 +1,150 @@
+/* Importing a custom Google font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+ 
+ 
+ 
+/* BODY */
+ 
+/* Basic styling for the body */
+body {
+    font-family: 'Roboto', sans-serif; /* Applying the imported font family to the body */
+    background-color: #f4f4f4;
+    background: linear-gradient(to right, #630404, #e040fb, #6a027c); /* Darker brown to lighter purple gradient background */
+}
+ 
+ 
+/* NAVIGATION */
+ 
+/* Styling navigation menu using child combinator */
+nav > ul > li {
+    display: inline;
+    margin-right: 20px;
+    text-align: center; /* Aligns text to the center */
+    /* Flex item styling for responsive nav items */
+    padding: 10px;
+    flex: 1; /* Allows each item to grow */
+}
+ 
+/* Styling the navigation menu with a hover effect */
+nav a:hover {
+    background-color: #630404; /* Light background on hover */
+    color: #f3e40d; /* Dark text on hover */
+}
+ 
+ 
+ 
+/* HYPERLINKS */
+ 
+/* Styling links using attribute selector */
+a[href^="#"] {
+    text-decoration: none;
+    color: white;
+}
+ 
+ 
+ 
+/* HEADINGS */
+ 
+/* Styling for the header using element selector */
+header {
+    background: #333; 
+    color: white; 
+    padding: 10px;
+    text-align: center;
+    /* Flex container for the header to space out elements */
+    display: flex;
+    justify-content: space-between; /* Distributes space between items */
+    align-items: center; /* Aligns items vertically */
+    padding: 0 10px;
+}
+ 
+/* Styling headings for emphasis */
+h1, h2, h3 {
+    font-weight: 700; /* Makes the font bold */
+}
+ 
+/* Styling paragraph using adjacent sibling combinator */
+h2 + p {
+    color: #cfbdbd;
+}      
+ 
+ 
+ 
+/* MAIN */
+ 
+/* Styling for the main content area */
+/* main {
+    margin: 20px;
+    border: 2px solid #333;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 2fr 3fr; One column for the aside, three for the main content 
+    gap: 20px; Space between grid items 
+} */
+ 
+/* Flex container for main content area */
+main {
+    display: flex;
+    flex-direction: row; /* Stacks items vertically */
+    gap: 10px; /* Creates space between flex items */
+}
+ 
+/* ARTICLE */
+ 
+/* Styling for the article */
+article {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid grey;
+    /* Flex item adjustments for articles within main */
+    flex: 1; /* Allows the article to grow and fill the space */
+}
+/* Applying Box Model to the paragraph */
+article p {
+    margin-bottom: 20px;
+    border: 1px solid skyblue;
+    padding: 15px;
+}
+ 
+ 
+ 
+/* IDs */
+ 
+/* Targeting specific section with ID selector */
+#mint {
+    background-color: #eaeaea;
+    padding: 15px;
+    margin-top: 10px;
+}
+ 
+/* Styling for the form inside the mint section */
+#mint form {
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-top: 10px;
+}
+ 
+/* Flex container for the form inside mint section */
+#mint form {
+    display: flex;
+    flex-direction: column; /* Stacks form items vertically */
+    gap: 10px; /* Creates space between form items */
+}
+ 
+/* Styling for input and button elements */
+#mint input,
+#mint button {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    flex: 1; /* Allows inputs and button to grow */
+}
+ 
+ 
+ 
+/* PARAGRAPH */
+ 
+/* Adjusting paragraph line spacing for readability */
+p {
+    line-height: 3.5; /* Sets the space between lines */
+}
